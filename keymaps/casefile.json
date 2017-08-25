@@ -1,0 +1,5 @@
+{
+  "atom-workspace": {
+    "cmd-*": "casefile:add-bookmark"
+  }
+}

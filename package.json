@@ -1,0 +1,20 @@
+{
+  "name": "casefile",
+  "main": "./lib/casefile",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "casefile:add-bookmark"
+    ]
+  },
+  "repository": "https://github.com/atom/casefile",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

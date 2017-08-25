@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Add Casefile Bookmark",
+        "command": "casefile:add-bookmark"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Edit",
+      "submenu": [
+        {
+          "label": "Bookmark",
+          "submenu": [
+            {
+              "label": "Add Casefile Bookmark",
+              "command": "casefile:add-bookmark"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
