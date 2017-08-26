@@ -5,6 +5,12 @@
         "label": "Add Casefile Bookmark",
         "command": "casefile:add-bookmark"
       }
+    ],
+    "casefile-viewer": [
+      {
+        "label": "Clear All Bookmarks",
+        "command": "casefile:clear-bookmarks"
+      }
     ]
   },
   "menu": [
