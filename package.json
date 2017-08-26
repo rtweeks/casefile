@@ -3,11 +3,11 @@
   "main": "./lib/casefile",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": [
-      "casefile:add-bookmark"
+      "casefile:add-bookmark",
+      "casefile:open"
     ]
   },
   "repository": "https://github.com/atom/casefile",
@@ -16,5 +16,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "jsx": "^0.9.89"
   }
 }
