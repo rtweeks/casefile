@@ -26,13 +26,43 @@
 }
 
 casefile-viewer .bookmark {
-  cursor: default;
-}
-
-casefile-viewer .bookmark .actions {
-  float: right;
+  .bookmark-body {
+    cursor: default;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+  }
+  
+  .handle {
+    cursor: move;
+    margin: auto 0;
+    text-align: center;
+    flex-grow: 0;
+  }
+  
+  * {
+    flex-grow: 1;
+  }
 }
 
 casefile-viewer .child-marks {
   min-height: 10px;
+  padding-left: 2em;
 }
+
+casefile-viewer .trash {
+  // Based on https://stackoverflow.com/a/20276358/160072
+  position: absolute;
+  bottom: 0%;
+  height: 2.5em;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  
+  div {
+    margin: auto;
+  }
+}
+
