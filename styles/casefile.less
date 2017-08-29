@@ -4,6 +4,8 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@indent: 1.5em;
+
 .casefile {
 }
 
@@ -39,6 +41,7 @@ casefile-viewer .bookmark {
     margin: auto 0;
     text-align: center;
     flex-grow: 0;
+    width: @indent;
   }
   
   * {
@@ -53,11 +56,23 @@ casefile-viewer {
   
   .tail-insertion {
     height: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    
+    .indent-align {
+      width: @indent;
+      flex-grow: 0;
+    }
+    
+    * {
+      flex-grow: 1;
+    }
   }
 }
 
 casefile-viewer .child-marks {
-  padding-left: 2em;
+  padding-left: @indent;
 }
 
 casefile-viewer .trash {
