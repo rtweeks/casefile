@@ -4,6 +4,8 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@indent: 1.5em;
+
 .casefile {
 }
 
@@ -26,13 +28,65 @@
 }
 
 casefile-viewer .bookmark {
-  cursor: default;
+  .bookmark-body {
+    cursor: default;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+  }
+  
+  .drag-handle {
+    cursor: move;
+    margin: auto 0;
+    text-align: center;
+    flex-grow: 0;
+    width: @indent;
+  }
+  
+  * {
+    flex-grow: 1;
+  }
 }
 
-casefile-viewer .bookmark .actions {
-  float: right;
+casefile-viewer {
+  .insert-before {
+    border-top: darkgray solid 3px;
+  }
+  
+  .tail-insertion {
+    height: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    
+    .indent-align {
+      width: @indent;
+      flex-grow: 0;
+    }
+    
+    * {
+      flex-grow: 1;
+    }
+  }
 }
 
 casefile-viewer .child-marks {
-  min-height: 10px;
+  padding-left: @indent;
 }
+
+casefile-viewer .trash {
+  // Based on https://stackoverflow.com/a/20276358/160072
+  position: absolute;
+  bottom: 0%;
+  height: 2.5em;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  
+  div {
+    margin: auto;
+  }
+}
+
