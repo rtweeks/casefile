@@ -5,6 +5,7 @@
 @import "ui-variables";
 
 @indent: 1.5em;
+@casefile-display-background-color: @tool-panel-background-color;
 
 .casefile {
 }
@@ -34,6 +35,11 @@ casefile-viewer .bookmark {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
+    border-radius: 3px;
+  }
+  
+  .bookmark-body:hover {
+    background-color: multiply(@casefile-display-background-color, #dddddd);
   }
   
   .drag-handle {
@@ -50,6 +56,8 @@ casefile-viewer .bookmark {
 }
 
 casefile-viewer {
+  background-color: @casefile-display-background-color;
+  
   .insert-before {
     border-top: darkgray solid 3px;
   }
