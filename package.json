@@ -20,7 +20,8 @@
     "jquery": "^3.2.1",
     "marked": "^0.3.6",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "tempy": "^0.1.0"
   },
   "devDependencies": {
     "jsx": "^0.9.89"
