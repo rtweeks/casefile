@@ -1,5 +1,5 @@
 {
-  "atom-workspace": {
+  ".platform-darwin atom-workspace": {
     "cmd-*": "casefile:add-bookmark"
   }
 }

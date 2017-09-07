@@ -2,15 +2,15 @@
   "name": "casefile",
   "main": "./lib/casefile",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "description": "Bookmarks package for programmer-archeologists",
+  "keywords": ["bookmark", "bookmarks"],
   "activationCommands": {
     "atom-workspace": [
       "casefile:add-bookmark",
       "casefile:open"
     ]
   },
-  "repository": "https://github.com/atom/casefile",
+  "repository": "https://github.com/rtweeks/casefile",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
