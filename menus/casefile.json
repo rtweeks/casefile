@@ -8,7 +8,11 @@
     ],
     "casefile-viewer": [
       {
-        "label": "Clear All Bookmarks",
+        "label": "Open Casefile in Editor",
+        "command": "casefile:to-text"
+      },
+      {
+        "label": "Clear All Bookmarks...",
         "command": "casefile:clear-bookmarks"
       }
     ]
