@@ -15,6 +15,12 @@
         "label": "Clear All Bookmarks...",
         "command": "casefile:clear-bookmarks"
       }
+    ],
+    "casefile-viewer .bookmark-body": [
+      {
+        "label": "Edit Bookmark Notes...",
+        "command": "casefile:edit-notes"
+      }
     ]
   },
   "menu": [
