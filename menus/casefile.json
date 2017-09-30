@@ -20,6 +20,10 @@
       {
         "label": "Edit Bookmark Notes...",
         "command": "casefile:edit-notes"
+      },
+      {
+        "label": "Move Children Up",
+        "command": "casefile:move-children-up"
       }
     ]
   },
