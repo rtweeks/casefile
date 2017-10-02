@@ -8,8 +8,22 @@
     ],
     "casefile-viewer": [
       {
-        "label": "Clear All Bookmarks",
+        "label": "Open Casefile in Editor",
+        "command": "casefile:to-text"
+      },
+      {
+        "label": "Clear All Bookmarks...",
         "command": "casefile:clear-bookmarks"
+      }
+    ],
+    "casefile-viewer .bookmark-body": [
+      {
+        "label": "Edit Bookmark Notes...",
+        "command": "casefile:edit-notes"
+      },
+      {
+        "label": "Move Children Up",
+        "command": "casefile:move-children-up"
       }
     ]
   },
