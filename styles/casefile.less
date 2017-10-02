@@ -58,6 +58,17 @@ casefile-viewer .bookmark {
 casefile-viewer {
   background-color: @casefile-display-background-color;
   
+  .bookmarks-ui {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .bookmarks {
+      flex: auto;
+      overflow-y: scroll;
+    }
+  }
+  
   .insert-before {
     border-top: darkgray solid 3px;
   }
@@ -85,8 +96,8 @@ casefile-viewer .child-marks {
 
 casefile-viewer .trash {
   // Based on https://stackoverflow.com/a/20276358/160072
-  position: absolute;
-  bottom: 0%;
+  //position: absolute;
+  //bottom: 0%;
   height: 2.5em;
   width: 100%;
   
