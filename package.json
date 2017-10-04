@@ -1,9 +1,12 @@
 {
   "name": "casefile",
   "main": "./lib/casefile",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Bookmarks package for programmer-archeologists",
-  "keywords": ["bookmark", "bookmarks"],
+  "keywords": [
+    "bookmark",
+    "bookmarks"
+  ],
   "activationCommands": {
     "atom-workspace": [
       "casefile:add-bookmark",
