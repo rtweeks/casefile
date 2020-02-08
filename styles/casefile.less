@@ -6,6 +6,7 @@
 
 @indent: 1.5em;
 @casefile-display-background-color: @tool-panel-background-color;
+@casefile-insertion-marker-color: contrast(@casefile-display-background-color, #101010, #c0c0c0);
 
 .casefile {
 }
@@ -35,11 +36,14 @@ casefile-viewer .bookmark {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
+    border-width: 1px;
     border-radius: 3px;
+    padding: 2px 0;
+    user-select: none;
   }
   
   .bookmark-body:hover {
-    background-color: multiply(@casefile-display-background-color, #dddddd);
+    background-color: mix(@casefile-display-background-color, @background-color-selected, 80%);
   }
   
   .drag-handle {
@@ -67,6 +71,16 @@ casefile-viewer {
       flex: auto;
       overflow-y: scroll;
     }
+    
+    .insertion-marker {
+      height: 6px;
+      background-color: fade(@casefile-insertion-marker-color, 30%);
+      border-radius: 3px;
+    }
+  }
+  
+  .casefile-hidden {
+    display: none;
   }
   
   .insert-before {
