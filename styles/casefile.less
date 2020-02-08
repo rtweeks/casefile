@@ -35,7 +35,16 @@ casefile-viewer .bookmark {
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-left-color: #ddd;
+    border-top-color: #ddd;
+    border-right-color: #999;
+    border-bottom-color: #999;
     border-radius: 3px;
+    background-color: white;
+    padding: 2px 0;
+    user-select: none;
   }
   
   .bookmark-body:hover {
@@ -67,6 +76,16 @@ casefile-viewer {
       flex: auto;
       overflow-y: scroll;
     }
+    
+    .insertion-marker {
+      height: 6px;
+      background-color: rgba(16, 16, 16, 0.3);
+      border-radius: 3px;
+    }
+  }
+  
+  .casefile-hidden {
+    display: none;
   }
   
   .insert-before {
