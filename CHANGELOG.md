@@ -1,3 +1,23 @@
-## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+## 1.2.0 - Improved UI
+* "T" division of bookmark for drop location:
+  * Move to sibling above,
+  * Move to sibling below, or
+  * Move to first child
+
+## 1.1.2 - Project-relative file paths
+* Make paths in bookmarks relative to files, so sharing casefiles with others
+  using the same repo at a different file path works
+
+## 1.1.1 - Bug fix
+* Fix tooltip creation
+
+## 1.1.0 - Reimplement with Etch framework
+* Etch is better integrated with Atom than is ReactJS
+
+## 1.0.0 - Basic Functionality
+* Bookmarking: file, line, marked text, notes (and, invisibly, git commit)
+* Bookmark ordering and hierarchy with drag-and-drop
+* Dump casefile to editor
+* Load casefile from editor:
+  * Loads under a header (so entire casefile can be discarded)
+  * Promote to container with "Move Children Up"
