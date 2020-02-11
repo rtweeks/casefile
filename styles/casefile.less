@@ -128,6 +128,43 @@ casefile-viewer .trash {
   background-color: @app-background-color;
 }
 
+.inline-control-group .inline-block {
+  vertical-align: bottom;
+}
+
 casefile-sharing {
   background-color: @casefile-sharing-background-color;
+  
+  atom-panel {
+    margin: 2px;
+    border: 1px solid @tool-panel-border-color;
+    padding: 1em;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .section {
+    margin-bottom: 3em;
+  }
+  
+  .casefile-sharing-git-remote {
+    min-width: 10em;
+  }
+  
+  .known-casefiles-ui {
+    width: 35em;
+  }
+  
+  .known-casefiles-list {
+    background-color: @inset-panel-background-color;
+    border: 1px solid @inset-panel-border-color;
+    height: 30em;
+    position: relative; /* This contains the list-tree selection */
+    overflow-y: auto;
+  }
+  
+  .known-casefiles-buttons {
+    margin-top: 10px;
+    text-align: right;
+  }
 }
