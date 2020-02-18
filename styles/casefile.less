@@ -144,7 +144,9 @@ casefile-sharing {
   }
   
   .section {
-    margin-bottom: 3em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px @tool-panel-border-color solid;
   }
   
   .casefile-sharing-git-remote {
@@ -174,5 +176,19 @@ casefile-sharing {
     .icon {
       float: left;
     }
+  }
+  
+  .casefile-recovery-ui {
+    width: 35em;
+    
+    ol.list-group {
+      height: 25em;
+      border: 1px @input-border-color solid;
+    }
+  }
+  
+  .casefile-recovery-buttons {
+    margin-top: 10px;
+    text-align: right;
   }
 }
