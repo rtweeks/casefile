@@ -14,6 +14,10 @@
       {
         "label": "Clear All Bookmarks...",
         "command": "casefile:clear-bookmarks"
+      },
+      {
+        "label": "Share Bookmarks...",
+        "command": "casefile:share"
       }
     ],
     "casefile-viewer .bookmark-body": [
