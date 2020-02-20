@@ -7,6 +7,7 @@
 @indent: 1.5em;
 @casefile-display-background-color: @tool-panel-background-color;
 @casefile-insertion-marker-color: contrast(@casefile-display-background-color, #101010, #c0c0c0);
+@casefile-sharing-background-color: @tool-panel-background-color;
 
 .casefile {
 }
@@ -125,4 +126,69 @@ casefile-viewer .trash {
 
 .tooltip .casefile-tooltip code {
   background-color: @app-background-color;
+}
+
+.inline-control-group .inline-block {
+  vertical-align: bottom;
+}
+
+casefile-sharing {
+  background-color: @casefile-sharing-background-color;
+  
+  atom-panel {
+    margin: 2px;
+    border: 1px solid @tool-panel-border-color;
+    padding: 1em;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .section {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px @tool-panel-border-color solid;
+  }
+  
+  .casefile-sharing-git-remote {
+    min-width: 10em;
+  }
+  
+  .known-casefiles-ui {
+    width: 35em;
+  }
+  
+  .known-casefiles-list {
+    background-color: @inset-panel-background-color;
+    border: 1px solid @inset-panel-border-color;
+    height: 30em;
+    position: relative; /* This contains the list-tree selection */
+    overflow-y: auto;
+  }
+  
+  .known-casefiles-buttons {
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .casefile-sharing-name {
+    width: 20em;
+    
+    .icon {
+      float: left;
+    }
+  }
+  
+  .casefile-recovery-ui {
+    width: 35em;
+    
+    ol.list-group {
+      height: 25em;
+      border: 1px @input-border-color solid;
+    }
+  }
+  
+  .casefile-recovery-buttons {
+    margin-top: 10px;
+    text-align: right;
+  }
 }
