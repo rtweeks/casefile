@@ -1,3 +1,12 @@
+## 1.3.0 - Casefile sharing
+* Share casefiles through the Git repository
+* Better bookmark anchors using `git blame`
+* Better internal state management
+
+## 1.2.1 - Bug fixes
+* Drag-and-drop state management fixed
+* Tooltip lifecycle fixed
+
 ## 1.2.0 - Improved UI
 * "T" division of bookmark for drop location:
   * Move to sibling above,
