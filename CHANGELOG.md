@@ -1,3 +1,6 @@
+## 1.3.1 - Bug fixes
+* State management when pseudo-branch does not exist on remote
+
 ## 1.3.0 - Casefile sharing
 * Share casefiles through the Git repository
 * Better bookmark anchors using `git blame`
