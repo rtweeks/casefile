@@ -1,3 +1,8 @@
+## 1.3.2 - Bug fixes
+* Fixed "locked condition" broadcast sequencing
+* Fixed "Fetch Shared" to work even if the pseudo-branch has not yet been
+  created in the remote repository
+
 ## 1.3.1 - Bug fixes
 * State management when pseudo-branch does not exist on remote
 
