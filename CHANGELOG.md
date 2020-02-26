@@ -1,3 +1,7 @@
+## 1.3.3 - Bug fixes
+* Relativize bookmark paths before sharing
+* Fix line numbers represented as strings in bookmark location computation
+
 ## 1.3.2 - Bug fixes
 * Fixed "locked condition" broadcast sequencing
 * Fixed "Fetch Shared" to work even if the pseudo-branch has not yet been
