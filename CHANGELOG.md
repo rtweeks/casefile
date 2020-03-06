@@ -1,3 +1,8 @@
+## 1.4.0 - Minor improvements
+* Derelativize bookmark paths when imported from sharing
+* Allow configuration of the default side for the bookmark notes
+* Use `git blame` as a first attempt to resolve the current location of a bookmark being opened
+
 ## 1.3.3 - Bug fixes
 * Relativize bookmark paths before sharing
 * Fix line numbers represented as strings in bookmark location computation
